@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Presentations - Kostas</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		body {
+			font-family: 'Plus Jakarta Sans', sans-serif;
+			background-color: #f9f3e5;
+			color: #2c3e50;
+			line-height: 1.6;
+			padding: 40px 20px;
+		}
+		
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+		}
+		
+		header {
+			text-align: center;
+			margin-bottom: 60px;
+		}
+		
+		h1 {
+			font-size: 2.5em;
+			font-weight: 700;
+			margin-bottom: 10px;
+			color: #2c3e50;
+		}
+		
+		.subtitle {
+			font-size: 1.1em;
+			color: #7f8c8d;
+			font-weight: 400;
+		}
+		
+		.presentations {
+			display: grid;
+			gap: 30px;
+		}
+		
+		.presentation-card {
+			background: white;
+			border-radius: 12px;
+			padding: 30px;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+			transition: transform 0.2s, box-shadow 0.2s;
+		}
+		
+		.presentation-card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+		}
+		
+		.presentation-card h2 {
+			font-size: 1.5em;
+			font-weight: 600;
+			margin-bottom: 10px;
+			color: #2c3e50;
+		}
+		
+		.presentation-card p {
+			color: #7f8c8d;
+			margin-bottom: 20px;
+			font-size: 0.95em;
+		}
+		
+		.presentation-card .meta {
+			font-size: 0.85em;
+			color: #95a5a6;
+			margin-bottom: 20px;
+		}
+		
+		.presentation-card a {
+			display: inline-block;
+			background-color: #e74c3c;
+			color: white;
+			padding: 12px 24px;
+			border-radius: 6px;
+			text-decoration: none;
+			font-weight: 500;
+			transition: background-color 0.2s;
+		}
+		
+		.presentation-card a:hover {
+			background-color: #c0392b;
+		}
+		
+		footer {
+			text-align: center;
+			margin-top: 60px;
+			color: #95a5a6;
+			font-size: 0.9em;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>Presentations</h1>
+			<p class="subtitle">Tech talks and presentations by Konstantinos Chatzinikolakis</p>
+		</header>
+		
+		<div class="presentations">
+			<div class="presentation-card">
+				<h2>A Day in the Life of a Software Engineer</h2>
+				<p class="meta">November 11, 2025 • Interns Tech Talk</p>
+				<p>An introduction to software engineering at Epignosis: agile processes, sprints, code reviews, QA, and collaboration across teams.</p>
+				<a href="presentations/day-in-life/interns-tech-talk-day-in-life.html">View Presentation →</a>
+			</div>
+			
+			<!-- Future presentations will go here -->
+			<!-- 
+			<div class="presentation-card">
+				<h2>Future Presentation Title</h2>
+				<p class="meta">Date • Category</p>
+				<p>Description of the presentation.</p>
+				<a href="presentations/folder/presentation.html">View Presentation →</a>
+			</div>
+			-->
+		</div>
+		
+		<footer>
+			<p>Built with Reveal.js</p>
+		</footer>
+	</div>
+</body>
+</html>
+
