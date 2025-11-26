@@ -1,0 +1,41 @@
+title: Konstantinos Chatzinikolakis
+email: chatzinikolakisk@gmail.com
+description: >-
+  Personal webpage featuring blog posts and technical presentations.
+baseurl: ""
+url: "https://chatzinikolakisk.github.io"
+repository: chatzinikolakisk/chatzinikolakisk.github.io
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+
+# Collections
+collections:
+  presentations:
+    output: true
+    permalink: /presentations/:name/
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+
+# Social links
+github_username: chatzinikolakisk
+linkedin_username: your-linkedin
+
+# Navigation
+header_pages:
+  - blog.md
+  - presentations.md
