@@ -119,7 +119,7 @@ blockquote {
   border: none;
   cursor: pointer;
   padding: 8px;
-  margin-left: 12px;
+  margin-left: 18px;
   border-radius: 6px;
   transition: background-color 0.2s ease;
   position: relative;
@@ -175,20 +175,22 @@ blockquote {
   }
 }
 
-// Navigation alignment
-.site-nav {
-  display: flex;
-  align-items: center;
-  
-  .trigger {
+// Navigation alignment - Desktop only
+@media screen and (min-width: 601px) {
+  .site-nav {
     display: flex;
     align-items: center;
-    order: 1;
-  }
-  
-  .theme-toggle {
-    order: 2;
-    margin-left: auto;
+    
+    .trigger {
+      display: flex;
+      align-items: center;
+      order: 1;
+    }
+    
+    .theme-toggle {
+      order: 2;
+      margin-left: 18px;
+    }
   }
 }
 
@@ -218,7 +220,7 @@ blockquote {
   }
   
   .theme-toggle {
-    margin-left: auto;
+    margin-left: 0;
   }
   
   .site-nav, .site-nav .trigger {
