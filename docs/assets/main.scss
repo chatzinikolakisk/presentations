@@ -1,0 +1,178 @@
+---
+---
+
+// Nord Color Palette
+:root {
+  // Polar Night
+  --nord0: #2e3440;
+  --nord1: #3b4252;
+  --nord2: #434c5e;
+  --nord3: #4c566a;
+  
+  // Snow Storm
+  --nord4: #d8dee9;
+  --nord5: #e5e9f0;
+  --nord6: #eceff4;
+  
+  // Frost
+  --nord7: #8fbcbb;
+  --nord8: #88c0d0;
+  --nord9: #81a1c1;
+  --nord10: #5e81ac;
+  
+  // Aurora
+  --nord11: #bf616a;
+  --nord12: #d08770;
+  --nord13: #ebcb8b;
+  --nord14: #a3be8c;
+  --nord15: #b48ead;
+  
+  // Theme variables - Dark (Polar Night) by default
+  --bg-primary: var(--nord0);
+  --bg-secondary: var(--nord1);
+  --bg-tertiary: var(--nord2);
+  --text-primary: var(--nord4);
+  --text-secondary: var(--nord6);
+  --border-color: var(--nord2);
+  --accent: var(--nord8);
+  --accent-hover: var(--nord9);
+  --code-bg: var(--nord1);
+  --code-text: var(--nord13);
+}
+
+// Light theme (Snow Storm)
+[data-theme="light"] {
+  --bg-primary: var(--nord6);
+  --bg-secondary: var(--nord5);
+  --bg-tertiary: var(--nord4);
+  --text-primary: var(--nord1);
+  --text-secondary: var(--nord0);
+  --border-color: var(--nord4);
+  --accent: var(--nord10);
+  --accent-hover: var(--nord9);
+  --code-bg: var(--nord5);
+  --code-text: var(--nord12);
+}
+
+@import "minima";
+
+// Override Minima variables with theme-aware Nord colors
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.site-header {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  
+  .site-title {
+    color: var(--text-secondary);
+    
+    &:hover {
+      color: var(--accent);
+    }
+  }
+  
+  .page-link {
+    color: var(--text-primary);
+    
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
+
+.site-nav .page-link {
+  color: var(--text-primary);
+}
+
+.post-title, .page-heading {
+  color: var(--text-secondary);
+}
+
+a {
+  color: var(--accent);
+  
+  &:hover {
+    color: var(--accent-hover);
+  }
+  
+  &:visited {
+    color: var(--nord9);
+  }
+}
+
+code {
+  background-color: var(--code-bg);
+  color: var(--code-text);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border-left: 4px solid var(--accent);
+}
+
+blockquote {
+  border-left: 4px solid var(--accent);
+  color: var(--text-primary);
+}
+
+// Minimal theme toggle button (inspired by Nord theme site)
+.theme-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  margin-left: 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  
+  &:hover {
+    background-color: var(--bg-tertiary);
+  }
+  
+  &:active {
+    transform: scale(0.95);
+  }
+  
+  // Icons
+  .theme-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    scale: 0.8;
+    
+    &.active {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+  
+  .moon-icon {
+    color: var(--nord8);
+  }
+  
+  .sun-icon {
+    color: var(--nord13);
+  }
+}
+
+// Ensure toggle aligns with nav items
+.site-nav .trigger {
+  display: flex;
+  align-items: center;
+}

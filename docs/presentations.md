@@ -10,7 +10,7 @@ Tech talks and presentations by Konstantinos Chatzinikolakis.
 
 {% for presentation in site.presentations %}
 ## [{{ presentation.title }}]({{ presentation.url }})
-*{{ presentation.date }} • {{ presentation.category }}*
+*{{ presentation.date | date: "%B %d, %Y"  }} • {{ presentation.category }}*
 
 {{ presentation.description }}
 

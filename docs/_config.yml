@@ -1,10 +1,11 @@
-title: Konstantinos Chatzinikolakis
+title: Life, Deployed
 email: chatzinikolakisk@gmail.com
 description: >-
   Personal webpage featuring blog posts and technical presentations.
 baseurl: ""
 url: "https://chatzinikolakisk.github.io"
 repository: chatzinikolakisk/chatzinikolakisk.github.io
+author: Konstantinos Chatzinikolakis
 
 # Build settings
 markdown: kramdown
