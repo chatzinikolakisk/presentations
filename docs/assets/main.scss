@@ -187,6 +187,30 @@ blockquote {
     display: flex;
     align-items: center;
     gap: 12px;
+    position: relative;
+    
+    .trigger {
+      display: none;
+    }
+    
+    // When menu is open, show dropdown
+    .nav-trigger:checked ~ .trigger {
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-top: none;
+      padding: 16px;
+      z-index: 100;
+    }
+    
+    .nav-trigger:checked ~ .trigger .page-link {
+      display: block;
+      padding: 8px 0;
+    }
   }
   
   .theme-toggle {
