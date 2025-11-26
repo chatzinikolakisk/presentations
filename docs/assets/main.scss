@@ -176,9 +176,20 @@ blockquote {
 }
 
 // Navigation alignment
-.site-nav .trigger {
+.site-nav {
   display: flex;
   align-items: center;
+  
+  .trigger {
+    display: flex;
+    align-items: center;
+    order: 1;
+  }
+  
+  .theme-toggle {
+    order: 2;
+    margin-left: auto;
+  }
 }
 
 // Mobile navigation
