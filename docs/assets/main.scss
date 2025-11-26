@@ -183,6 +183,16 @@ blockquote {
 
 // Mobile navigation
 @media screen and (max-width: 600px) {
+  .site-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .theme-toggle {
+    margin-left: auto;
+  }
+  
   .site-nav, .site-nav .trigger {
     background-color: var(--bg-secondary) !important;
     border: none !important;
