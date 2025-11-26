@@ -1,38 +1,81 @@
-# Presentations
+# Personal Website - Konstantinos Chatzinikolakis
 
-Repository for tech talks and presentations by Konstantinos Chatzinikolakis.
+Personal website featuring blog posts and technical presentations, built with Jekyll and hosted on GitHub Pages.
 
-## Setup
+## 🚀 Quick Start
 
-This repository uses GitHub Pages to host presentations. The `docs/` folder contains all presentation files.
+### Local Development with Docker
 
-## Structure
+1. **Prerequisites**: Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
+2. **Run locally**:
+   ```bash
+   docker-compose up
+   ```
+
+3. **View site**: Open http://localhost:4000
+
+4. **Live reload**: Files update automatically when you save changes
+
+### Adding Content
+
+#### Blog Posts
+Create new posts in `docs/_posts/` using this format:
+```
+docs/_posts/YYYY-MM-DD-title.md
+```
+
+Example front matter:
+```yaml
+---
+layout: post
+title: "Your Post Title"
+date: 2025-01-15 10:00:00 +0000
+categories: tech
+---
+
+Your content here...
+```
+
+#### Presentations
+Add presentations to `docs/presentations/` directory. Existing presentations use Reveal.js.
+
+## 🏗️ Structure
 
 ```
 docs/
-  index.html                    # Landing page
-  presentations/
-    day-in-life/
-      interns-tech-talk-day-in-life.html
-      logo.png
-      upskill-tech.svg
+├── _config.yml          # Jekyll configuration
+├── index.md             # Homepage
+├── blog.md              # Blog listing page
+├── presentations.md     # Presentations listing
+├── _posts/              # Blog posts
+│   └── YYYY-MM-DD-title.md
+└── presentations/       # Presentation files
+    └── day-in-life/
 ```
 
-## GitHub Pages Setup
+## 🚀 Deployment
 
-1. Go to repository Settings → Pages
-2. Source: Deploy from a branch
-3. Branch: `main` (or `master`)
-4. Folder: `/docs`
-5. Save
+Automatically deployed to GitHub Pages on push to `main` branch.
 
-Your presentations will be available at: `https://username.github.io/presentations/`
+View live site: https://chatzinikolakisk.github.io
 
-## Adding New Presentations
+## 🛠️ Tech Stack
 
-1. Create a new folder in `docs/presentations/`
-2. Add your presentation HTML file and assets
-3. Update `docs/index.html` to add a new card
-4. Commit and push
+- **Jekyll** - Static site generator
+- **GitHub Pages** - Hosting
+- **Reveal.js** - Presentations
+- **Docker** - Local development
+- **Markdown** - Content authoring
+
+## 📝 Development Notes
+
+- Jekyll uses the Minima theme
+- Blog posts support categories and tags
+- Live reload enabled for development
+- GitHub Pages builds automatically
+
+
+
 
 
