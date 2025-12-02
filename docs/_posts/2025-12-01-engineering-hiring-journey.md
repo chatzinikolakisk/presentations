@@ -5,8 +5,7 @@ date: 2025-12-01 10:00:00 +0000
 categories: work
 ---
 
-
-# The Evolution Never Stops: Three-Plus Years of Hiring Adventures in Engineering
+The Evolution Never Stops: Three-Plus Years of Hiring Adventures in Engineering
 
 > It is not the strongest of the species that survives, nor the most intelligent, but the one most responsive to change.
 
